@@ -22,6 +22,7 @@
       overflow-x: hidden;
     }
 
+    /* Background with subtle pattern */
     .bg-pattern {
       position: fixed;
       top: 0;
@@ -29,7 +30,9 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(135deg, #f0f9f0 0%, #e8f5e8 50%, #d4edda 100%);
-      background-image: radial-gradient(circle at 25% 25%, rgba(76, 175, 80, 0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(139, 195, 74, 0.1) 0%, transparent 50%);
+      background-image: 
+        radial-gradient(circle at 25% 25%, rgba(76, 175, 80, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(139, 195, 74, 0.1) 0%, transparent 50%);
       z-index: -1;
     }
 
@@ -43,6 +46,7 @@
       padding: 0 2rem;
     }
 
+    /* Professional Header */
     .header {
       padding: 2rem 0;
       border-bottom: 1px solid rgba(76, 175, 80, 0.2);
@@ -67,6 +71,7 @@
       background: linear-gradient(135deg, #4caf50, #8bc34a);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     .company-name {
@@ -85,6 +90,7 @@
       letter-spacing: 1px;
     }
 
+    /* Navigation */
     .navbar {
       display: flex;
       justify-content: center;
@@ -92,8 +98,11 @@
       flex-wrap: wrap;
     }
 
-    .nav-link,
-    .dropbtn {
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-link, .dropbtn {
       background: none;
       border: none;
       color: #2e7d32;
@@ -104,13 +113,13 @@
       cursor: pointer;
       border-radius: 8px;
       transition: all 0.3s ease;
+      position: relative;
       display: flex;
       align-items: center;
       gap: 0.5rem;
     }
 
-    .nav-link:hover,
-    .dropbtn:hover,
+    .nav-link:hover, .dropbtn:hover,
     .nav-link.active {
       background: rgba(76, 175, 80, 0.1);
       color: #1b5e20;
@@ -123,7 +132,7 @@
       top: 100%;
       left: 0;
       background: white;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
       border-radius: 12px;
       min-width: 200px;
       overflow: hidden;
@@ -150,6 +159,7 @@
       animation: fadeIn 0.3s ease;
     }
 
+    /* Main Content */
     .main-content {
       flex: 1;
       padding: 3rem 0;
@@ -184,7 +194,7 @@
       padding: 3rem 2rem;
       border-radius: 20px;
       backdrop-filter: blur(10px);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
       margin-bottom: 3rem;
       text-align: center;
     }
@@ -197,6 +207,7 @@
       background: linear-gradient(135deg, #1b5e20, #4caf50);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     .product-subtitle {
@@ -230,7 +241,7 @@
       padding: 3rem;
       border-radius: 20px;
       backdrop-filter: blur(10px);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
       border: 1px solid rgba(76, 175, 80, 0.2);
     }
 
@@ -304,16 +315,6 @@
       color: #1b5e20;
     }
 
-    .full-width-section {
-      background: rgba(255, 255, 255, 0.8);
-      padding: 3rem;
-      border-radius: 20px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-      border: 1px solid rgba(76, 175, 80, 0.2);
-      margin: 3rem 0;
-    }
-
     .benefits-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -325,7 +326,7 @@
       background: rgba(255, 255, 255, 0.9);
       padding: 2.5rem;
       border-radius: 16px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
       border: 1px solid rgba(76, 175, 80, 0.2);
       transition: all 0.3s ease;
       text-align: center;
@@ -333,7 +334,7 @@
 
     .benefit-card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.15);
     }
 
     .benefit-icon {
@@ -355,6 +356,43 @@
       line-height: 1.6;
     }
 
+    .full-width-section {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 3rem;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+      border: 1px solid rgba(76, 175, 80, 0.2);
+      margin: 3rem 0;
+    }
+
+    .testimonial {
+      background: linear-gradient(135deg, #4caf50, #8bc34a);
+      color: white;
+      padding: 2rem;
+      border-radius: 16px;
+      margin: 2rem 0;
+      position: relative;
+    }
+
+    .testimonial-text {
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .testimonial-location {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    /* Footer */
     .footer {
       padding: 2rem 0;
       text-align: center;
@@ -369,53 +407,66 @@
       font-weight: 500;
     }
 
+    /* Animations */
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(-10px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .fade-in {
       animation: fadeIn 0.8s ease forwards;
     }
 
-    @media (max-width:768px) {
+    /* Responsive Design */
+    @media (max-width: 768px) {
       .container {
         padding: 0 1rem;
       }
-
+      
       .content-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
       }
-
+      
       .product-title {
         font-size: 2.5rem;
       }
+      
+      .content-section {
+        padding: 2rem;
+      }
+      
+      .navbar {
+        gap: 1rem;
+      }
+      
+      .nav-link, .dropbtn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+      }
     }
 
-    @media (max-width:480px) {
+    @media (max-width: 480px) {
       .logo-section {
         flex-direction: column;
         text-align: center;
       }
-
+      
       .logo-icon {
+        margin-right: 0;
         margin-bottom: 0.5rem;
       }
-
+      
       .company-name {
         font-size: 1.8rem;
       }
-
+      
       .product-title {
         font-size: 2rem;
+      }
+      
+      .content-section {
+        padding: 1.5rem;
       }
     }
   </style>
@@ -433,30 +484,65 @@
         </div>
       </div>
       <nav class="navbar">
-        <a href="../index.html" class="nav-link"><i class="fas fa-home"></i>Home</a>
-        <a href="../about.html" class="nav-link"><i class="fas fa-info-circle"></i>About Us</a>
-        <div class="dropdown nav-item">
-          <button class="dropbtn"><i class="fas fa-leaf"></i>Products <i class="fas fa-chevron-down"></i></button>
-          <div class="dropdown-content">
-            <a href="pigeon-pea.html">Pigeon Pea Varieties</a>
-            <a href="wheat.html" class="active">Wheat Varieties</a>
-            <a href="gram.html">Gram Varieties</a>
-            <a href="corianderseeds.html">Coriander Seeds Varieties</a>
-          </div>
+        <div class="nav-item">
+          <a href="../index.html" class="nav-link">
+            <i class="fas fa-home"></i>
+            Home
+          </a>
+        </div>
+        
+        <div class="nav-item">
+          <a href="../about.html" class="nav-link">
+            <i class="fas fa-info-circle"></i>
+            About Us
+          </a>
+        </div>
+
+        <div class="nav-item dropdown">
+          <button class="dropbtn">
+            <i class="fas fa-leaf"></i>
+            Products
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="nav-item dropdown">
+
+  <div class="dropdown-content">
+    <a href="pigeon-pea.html">
+      <i class="fas fa-circle"></i>
+      Pigeon Pea Varieties
+    </a>
+    <a href="wheat.html">
+      <i class="fas fa-circle"></i>
+      Wheat Varieties
+    </a>
+    <a href="gram.html">
+      <i class="fas fa-circle"></i>
+      Gram Varieties
+    </a>
+     <a href="corianderseeds.html">
+      <i class="fas fa-circle"></i>
+      Coriander Seeds Varieties
+    </a>
+  </div>
+</div>
+
         </div>
       </nav>
     </header>
     <main class="main-content">
       <nav class="breadcrumb fade-in">
-        <span class="breadcrumb-text"><a href="../index.html">Home</a> / <a href="#">Products</a> / <span>Wheat
-            Varieties</span></span>
+        <span class="breadcrumb-text">
+          <a href="../index.html">Home</a> / 
+          <a href="#">Products</a> / 
+          <span>Wheat Varieties</span>
+        </span>
       </nav>
       <section class="product-header fade-in">
         <h2 class="product-title">Wheat Varieties</h2>
-        <p class="product-subtitle">Premium hybrid wheat varieties specially bred for high yield, disease resistance,
-          and climate resilience</p>
+        <p class="product-subtitle">Premium hybrid wheat varieties specially bred for high yield, disease resistance, and climate resilience</p>
         <div class="product-badge"><i class="fas fa-award"></i>Farmer's Choice</div>
       </section>
+
       <div class="content-grid">
         <section class="content-section fade-in">
           <h3 class="section-title"><i class="fas fa-seedling section-icon"></i>Our Wheat Varieties</h3>
@@ -464,21 +550,10 @@
             <li>નર્મદા ટુકડી</li>
             <li>નર્મદા લોક-૪</li>
             <li>નર્મદા સુપર સોના</li>
-            <li>નર્મદા સરબती ટુકડી</li>
+            <li>નર્મદા સરબતી ટુકડી</li>
             <li>લોક-૧ સર્ટિફાઇડ</li>
             <li>GW-૪૯૬ સર્ટિફાઇડ</li>
             <li>GW-૫૧૩ ટ્રુથફુલ</li>
-          </ul>
-        </section>
-        <section class="content-section fade-in">
-          <h3 class="section-title"><i class="fas fa-star section-icon"></i>Key Features</h3>
-          <ul class="features-list">
-            <li><i class="fas fa-cloud-rain feature-icon"></i>Suitable for rainfed and irrigated conditions</li>
-            <li><i class="fas fa-calendar-alt feature-icon"></i>Matures in 160–180 days</li>
-            <li><i class="fas fa-shield-alt feature-icon"></i>Resistant to major wheat diseases</li>
-            <li><i class="fas fa-gem feature-icon"></i>High grain quality and excellent taste</li>
-            <li><i class="fas fa-chart-line feature-icon"></i>Superior yield potential of 20-25 q/ha</li>
-            <li><i class="fas fa-thermometer-half feature-icon"></i>Climate adaptive varieties</li>
           </ul>
         </section>
         <section class="content-section fade-in">
@@ -486,15 +561,15 @@
           <div class="specs-grid">
             <div class="spec-item">
               <div class="spec-label">Maturity</div>
-              <div class="spec-value">160-180 Days</div>
+              <div class="spec-value">160–180 Days</div>
             </div>
             <div class="spec-item">
               <div class="spec-label">Plant Height</div>
-              <div class="spec-value">150-180 cm</div>
+              <div class="spec-value">150–180 cm</div>
             </div>
             <div class="spec-item">
               <div class="spec-label">Yield Potential</div>
-              <div class="spec-value">20-25 q/ha</div>
+              <div class="spec-value">20–25 q/ha</div>
             </div>
             <div class="spec-item">
               <div class="spec-label">Seed Color</div>
@@ -503,14 +578,14 @@
           </div>
         </section>
       </div>
+
       <section class="full-width-section fade-in">
         <h3 class="section-title"><i class="fas fa-thumbs-up section-icon"></i>Why Choose Our Wheat Varieties</h3>
         <div class="benefits-grid">
           <div class="benefit-card">
             <div class="benefit-icon"><i class="fas fa-seedling"></i></div>
             <h4 class="benefit-title">High Productivity</h4>
-            <p class="benefit-description">Engineered for maximum yield potential with consistent performance across
-              different growing conditions.</p>
+            <p class="benefit-description">Engineered for maximum yield potential with consistent performance across different growing conditions.</p>
           </div>
           <div class="benefit-card">
             <div class="benefit-icon"><i class="fas fa-bug"></i></div>
@@ -520,17 +595,16 @@
           <div class="benefit-card">
             <div class="benefit-icon"><i class="fas fa-coins"></i></div>
             <h4 class="benefit-title">Better Returns</h4>
-            <p class="benefit-description">Premium grain quality and higher market value ensure improved profitability
-              for farmers.</p>
+            <p class="benefit-description">Premium grain quality and higher market value ensure improved profitability for farmers.</p>
           </div>
           <div class="benefit-card">
             <div class="benefit-icon"><i class="fas fa-leaf"></i></div>
             <h4 class="benefit-title">Sustainable</h4>
-            <p class="benefit-description">Developed with sustainable farming practices in mind, promoting soil health
-              and biodiversity.</p>
+            <p class="benefit-description">Developed with sustainable farming practices in mind, promoting soil health and biodiversity.</p>
           </div>
         </div>
       </section>
+
     </main>
     <footer class="footer">
       <div class="footer-content">© 2025 Narmadavally Hybrid Seeds | Leading Agricultural Innovation</div>
