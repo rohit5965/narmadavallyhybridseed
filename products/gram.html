@@ -51,7 +51,7 @@
       border-bottom: 1px solid rgba(76, 175, 80, 0.2);
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(10px);
-      position: sticky;
+      position: relative;
       top: 0;
       z-index: 100;
     }
@@ -495,8 +495,8 @@
         </div>
       </nav>
     </header>
-
     <main class="main-content">
+      <!-- Breadcrumb -->
       <nav class="breadcrumb fade-in">
         <span class="breadcrumb-text">
           <a href="../index.html">Home</a> /
@@ -504,117 +504,141 @@
           <span>Gram (Cicer arietinum)</span>
         </span>
       </nav>
-
+    
+      <!-- Product Header -->
       <section class="product-header fade-in">
         <h2 class="product-title">Gram (Cicer arietinum)</h2>
         <p class="product-subtitle">Superior gram seeds for high yield, bold grains, and excellent market value</p>
         <div class="product-badge"><i class="fas fa-award"></i> Farmer's Choice</div>
       </section>
-
-      <div class="content-grid">
-        <!-- Gram Varieties -->
-        <section class="content-section fade-in">
-          <h3 class="section-title"><i class="fas fa-seedling section-icon"></i> Gram Varieties</h3>
-          <ul class="features-list">
-            <li><i class="fas fa-circle feature-icon"></i> ચણા નર્મદા-૩૩</li>
-            <li><i class="fas fa-circle feature-icon"></i> ચણા ગુજરાત-૩ (Certified)</li>
-            <li><i class="fas fa-circle feature-icon"></i> ચણા ગુજરાત-૫ (Certified)</li>
-            <li><i class="fas fa-circle feature-icon"></i> ચણા ગુજરાત-૭ (Truthful)</li>
-            <li><i class="fas fa-circle feature-icon"></i> ચણા ગુજરાત-૮ (Truthful)</li>
-            <li><i class="fas fa-circle feature-icon"></i> ચણા ફૂલે વિક્રમ</li>
-            <li><i class="fas fa-circle feature-icon"></i> સફેદ ચણા – નર્મદા કાબુલી</li>
-          </ul>
-        </section>
-      
-        <!-- Technical Specifications -->
-        <section class="content-section fade-in">
-          <h3 class="section-title"><i class="fas fa-cogs section-icon"></i> Technical Specifications</h3>
-          <div class="specs-grid">
-            <div class="spec-item">
-              <div class="spec-label">Maturity</div>
-              <div class="spec-value">95–110 Days</div>
-            </div>
-            <div class="spec-item">
-              <div class="spec-label">Plant Height</div>
-              <div class="spec-value">50–60 cm</div>
-            </div>
-            <div class="spec-item">
-              <div class="spec-label">Yield Potential</div>
-              <div class="spec-value">18–22 q/ha</div>
-            </div>
-            <div class="spec-item">
-              <div class="spec-label">Grain Type</div>
-              <div class="spec-value">Bold Cream or Brown</div>
-            </div>
-          </div>
-        </section>
-      </div>
-      
-
-      <section class="full-width-section fade-in">
-        <h3 class="section-title"><i class="fas fa-thumbs-up section-icon"></i> Why Choose Our Gram Varieties</h3>
-        <div class="benefits-grid">
-          <div class="benefit-card">
-            <div class="benefit-icon"><i class="fas fa-check-circle"></i></div>
-            <h4 class="benefit-title">Reliable Performance</h4>
-            <p class="benefit-description">Consistent yields in rainfed and limited-irrigation areas.</p>
-          </div>
-          <div class="benefit-card">
-            <div class="benefit-icon"><i class="fas fa-virus-slash"></i></div>
-            <h4 class="benefit-title">Wilt Resistance</h4>
-            <p class="benefit-description">Inbuilt tolerance to fusarium wilt and root rot.</p>
-          </div>
-          <div class="benefit-card">
-            <div class="benefit-icon"><i class="fas fa-money-bill-wave"></i></div>
-            <h4 class="benefit-title">Market Friendly</h4>
-            <p class="benefit-description">Bold grains attract premium prices.</p>
-          </div>
-          <div class="benefit-card">
-            <div class="benefit-icon"><i class="fas fa-globe-asia"></i></div>
-            <h4 class="benefit-title">Adaptable</h4>
-            <p class="benefit-description">Thrives in varied soils & climates across India.</p>
-          </div>
-        </div>
-        <div class="testimonial">
-          <p class="testimonial-text">
-            “Thanks to Narmadavally’s gram seeds, our productivity increased significantly. Grain quality is outstanding.”
-          </p>
-          <div class="testimonial-author">Mohammed Irfan</div>
-          <div class="testimonial-location">Farmer, Rajasthan</div>
-        </div>
+    
+      <!-- Gujarati Cultivation Guide (full-width, first just like wheat) -->
+      <section class="full-width-section fade-in" id="cultivation-guide">
+        <h3 class="section-title"><i class="fas fa-clipboard-list section-icon"></i>ચણા ની ખેતી પદ્ધતિ</h3>
+        <ul class="features-list">
+          <li><strong>વાવેતર સમય:</strong> ૨૫ ઑક્ટોબર થી ૧૫ ડિસેમ્બર</li>
+          <li><strong>જાતો:</strong> ગુજરાત-૩, ગુજરાત-૫, કાબુલી</li>
+          <li><strong>અંતર:</strong> ૧૮ ઇંચ × ૩ ઇંચ (છાંટણી)</li>
+          <li><strong>બીજદર:</strong> ૧૦ કિ.ગ્રા. પ્રતિ વિઘા (૨૫ કિ.ગ્રા. પ્રતિ એકર)</li>
+          <li><strong>બિયાણું સારવાર:</strong> SDM ૨ ગ્રામ + વિટા વેક્સ ૩ ગ્રામ પ્રતિ કિ.ગ્રા. બીજ</li>
+          <li><strong>રાસાયણિક ખાતર (બેઝલ):</strong> ડીએપી – ૧૫ કિ.ગ્રા. + યુરિયા ૨ કિ.ગ્રા. + કોપ સીડ પ્રો‑૧.૫ કિ.ગ્રા. (પ્રતિ વિઘા)</li>
+          <li><strong>પુર્તિ ખાતર:</strong> ૩૦ દિવસે યુરિયા – ૧૫ કિ.ગ્રા. પ્રતિ વિઘા</li>
+          <li><strong>નીંદામણ નિયંત્રણ:</strong> પેંડીમેથેલીન ૫૦૦ મી.લી. થી ૧ લીટર (માટી ભેજમાં) — પછી ૨,૪‑ડી જરૂર મુજબ</li>
+          <li><strong>રોગ નિયંત્રણ:</strong> ૩૦ થી ૬૦ દિવસે હેક્સાકોનાઝોલ ૩૦ મી.લી./પંપ</li>
+          <li><strong>જંતુ નિયંત્રણ:</strong> ૩૦ થી ૬૦ દિવસે પોહેરીઓ/ટ્રેસર/અવાંત/કોરાજન</li>
+          <li><strong>પાકવાના દિવસો:</strong> ૧૦૦ થી ૧૧૦ દિવસ</li>
+          <li><strong>અંદાજિત ઉત્પાદન:</strong> ૨૫–૩૫ માંસ (૧૨૫૦–૧૭૫૦ કિ.ગ્રા./એકર)</li>
+          <li><strong>ખાસ નોંધ:</strong> DAP તથા યુરિયા ને N‑માત્રા મુજબ આપવાથી ઉત્પાદનમાં વધારો થાય છે</li>
+        </ul>
       </section>
-
+    
+      <!-- Full-width simple list of varieties (like wheat kept) -->
       <section class="full-width-section fade-in">
-        <h3 class="section-title"><i class="fas fa-info-circle section-icon"></i> Cultivation Guidelines</h3>
-        <p style="font-size:1.1rem;color:#2e7d32;line-height:1.8;margin-bottom:2rem;">
-          Gram is a major pulse in India. Our varieties suit both early and timely sowing, with high resistance and excellent returns.
-        </p>
-        <div class="content-grid" style="margin-top:2rem;">
-          <div>
-            <h4 style="color:#1b5e20;font-weight:700;margin-bottom:1rem;">
-              <i class="fas fa-tractor" style="color:#4caf50;margin-right:0.5rem;"></i> Planting Instructions
-            </h4>
-            <ul style="color:#558b2f;line-height:1.8;">
-              <li>• Sowing time: October–November</li>
-              <li>• Spacing: 30 cm × 10 cm</li>
-              <li>• Seed depth: 5–6 cm</li>
-              <li>• Seed rate: 75–100 kg/ha</li>
+        <h3 class="section-title"><i class="fas fa-seedling section-icon"></i>Our Gram Varieties</h3>
+        <ul class="features-list">
+          <li>નર્મદા‑૩૩</li>
+          <li>નર્મદા કાબુલી</li>
+          <li>ગુજરાત‑૩ (સર્ટિફાઇડ)</li>
+          <li>ગુજરાત‑૫ (સર્ટિફાઇડ)</li>
+          <li>ગુજરાત‑૭ (સોરઠ સુરજ)</li>
+          <li>ગુજરાત‑૮ (સોરઠ વિક્રમ)</li>
+        </ul>
+      </section>
+    
+      <!-- Gujarati Gram Varieties – Cards (like wheat cards section) -->
+      <section class="full-width-section fade-in" id="gujarati-gram-varieties">
+        <div class="benefits-grid">
+    
+          <!-- ગુજરાત-૮ -->
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-tag"></i></div>
+            <h4 class="benefit-title">ગુજરાત‑૮ (સોરઠ વિક્રમ)</h4>
+            <ul class="features-list">
+              <li>ભલામણ વર્ષ: ૨૦૨૩</li>
+              <li>પાકવાના દિવસો: ૧૧૦</li>
+              <li>ઉત્પાદન ક્ષમતા: ૨૫૯૪ કિ.ગ્રા./હે. (પિયત), ૨૦૧૭ (બિનપિયત)</li>
+              <li>પિયત અને બિનપિયત બંને પરિસ્થિતિમાં અનુરૂપ</li>
+              <li>છોડ સીધા હોવાથી મશીનથી કાપણી અનુકૂળ</li>
+              <li>મધ્યમ કદના દાણા, કસદર્ય/બદામી રંગ</li>
+              <li>સ્ટંટર રોગ સામે પ્રતિરોધક; કોડી‑ખાદક ઇયળથી ઓછી નુકસાન</li>
+              <li>અન્ય જાતો કરતાં વધુ લોહતત્વ</li>
             </ul>
           </div>
-          <div>
-            <h4 style="color:#1b5e20;font-weight:700;margin-bottom:1rem;">
-              <i class="fas fa-droplet" style="color:#4caf50;margin-right:0.5rem;"></i> Water & Nutrient Management
-            </h4>
-            <ul style="color:#558b2f;line-height:1.8;">
-              <li>• 1–2 irrigations during flowering & podding</li>
-              <li>• NPK: 20:60:40 kg/ha</li>
-              <li>• Rhizobium & PSB seed inoculation</li>
-              <li>• FYM: 5–8 tonnes/ha before sowing</li>
+    
+          <!-- ગુજરાત-૭ -->
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-certificate"></i></div>
+            <h4 class="benefit-title">ગુજરાત‑૭ (સોરઠ સુરજ)</h4>
+            <ul class="features-list">
+              <li>ભલામણ વર્ષ: ૨૦૨૩</li>
+              <li>પાકવાના દિવસો: ૧૧૦</li>
+              <li>ઉત્પાદન ક્ષમતા: ૧૮૭૫ કિ.ગ્રા./હે.</li>
+              <li>પિયત તથા બિનપિયત વિસ્તારો માટે અનુરૂપ</li>
+              <li>દાણા મોટા તથા બદામી રંગના</li>
+              <li>સ્ટંટર માટે વધુ પ્રતિરોધક; સુકારામાં મધ્યમ પ્રતિરોધક</li>
+              <li>પ્રોટીન ૨૩.૬૫% અને ઝીંક ૩૩.૫૦ PPM</li>
             </ul>
           </div>
+    
+          <!-- ગુજરાત-૫ -->
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-leaf"></i></div>
+            <h4 class="benefit-title">ગુજરાત‑૫ (સર્ટિફાઇડ)</h4>
+            <ul class="features-list">
+              <li>ભલામણ વર્ષ: ૨૦૧૭</li>
+              <li>પાકવાના દિવસો: ૧૦૩–૧૧૦</li>
+              <li>ઉત્પાદન ક્ષમતા: ૧૫૦૦–૧૭૦૦ કિ.ગ્રા./હે.</li>
+              <li>પિયત તથા બિનપિયત બંને વિસ્તારો માટે અનુરૂપ</li>
+              <li>સુકારા માટે મધ્યમ પ્રતિરોધક; સ્ટંટર માટે વધુ પ્રતિરોધક</li>
+            </ul>
+          </div>
+    
+          <!-- ગુજરાત-૩ -->
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-seedling"></i></div>
+            <h4 class="benefit-title">ગુજરાત‑૩ (સર્ટિફાઇડ)</h4>
+            <ul class="features-list">
+              <li>ભલામણ વર્ષ: ૨૦૧૦</li>
+              <li>પાકવાના દિવસો: ૮૮–૧૧૦</li>
+              <li>ઉત્પાદન: ૧૭૨૦ કિ.ગ્રા./હે.</li>
+              <li>બિનપિયત વિસ્તારો માટે વધુ ઉત્તમ</li>
+              <li>સુકારા અને સ્ટંટર રોગ માટે મધ્યમ પ્રતિરોધક</li>
+              <li>૧૦૦ દાણા વજન: ૨૨.૫૭ ગ્રામ</li>
+            </ul>
+          </div>
+    
+          <!-- નર્મદા કાબુલી -->
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-box"></i></div>
+            <h4 class="benefit-title">નર્મદા કાબુલી</h4>
+            <ul class="features-list">
+              <li>વધુ ફૂટ વાળી જાત</li>
+              <li>પિયત તથા બિનપિયત પરિસ્થિતિમાં યોગ્ય</li>
+              <li>છોડની ઊંચાઈ: ૩૦ થી ૪૮ સે.મી.</li>
+              <li>પાકવાના દિવસો: ૧૧૫–૧૨૦</li>
+              <li>ઉત્પાદન ક્ષમતા: ૧૮૦૦–૨૦૦૦ કિ.ગ્રા./હે.</li>
+              <li>સુકારા તથા સ્ટંટર રોગ સામે વધુ પ્રતિરોધક</li>
+            </ul>
+          </div>
+    
+          <!-- નર્મદા-૩૩ -->
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-grip-lines"></i></div>
+            <h4 class="benefit-title">નર્મદા‑૩૩</h4>
+            <ul class="features-list">
+              <li>વધુ ફૂટ વાળી જાત</li>
+              <li>પિયત તથા બિનપિયત પરિસ્થિતિમાં યોગ્ય</li>
+              <li>છોડની ઊંચાઈ: ૩૦ થી ૪૮ સે.મી.</li>
+              <li>પાકવાના દિવસો: ૧૧૫–૧૨૦</li>
+              <li>ઉત્પાદન ક્ષમતા: ૧૮૦૦–૨૦૦૦ કિ.ગ્રા./હે.</li>
+              <li>સુકારા તથા સ્ટંટર રોગ સામે વધુ પ્રતિરોધક</li>
+            </ul>
+          </div>
+    
         </div>
       </section>
     </main>
+    
 
     <footer class="footer">
       <div class="footer-content">© 2025 Narmadavally Hybrid Seeds | Leading Agricultural Innovation</div>
